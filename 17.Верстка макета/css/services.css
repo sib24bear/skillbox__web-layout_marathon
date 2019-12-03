@@ -1,0 +1,399 @@
+.services {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  max-height: calc(100vh - 96px);
+
+  margin-left: 94px;
+  margin-top: 96px;
+  padding-top: 50px;
+  padding-bottom: 68px;
+
+  background-color: #fff;
+}
+
+.calendar__container {
+  flex-basis: 40%;
+  flex-grow: 1;
+  padding-top: 25px;
+  padding-left: 133px;
+}
+
+.date-time {
+  margin-right: 45px;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+
+  transition: color .5s linear;
+}
+
+.date-icon {
+  margin-right: 21px;
+  padding: 0 13px;
+  padding-top: 20px;
+  padding-bottom: 7px;
+
+  background-image: url('../images/calendar-page@2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.calendar-tabs__control {
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+
+  border: none;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+}
+
+.calendar-left {
+  background-image: url('../images/calendar-arrow-left@2x.png');
+
+}
+
+.calendar-right {
+  margin-left: 46px;
+  background-image: url('../images/calendar-arrow-right@2x.png');
+}
+
+.calendar {
+  width: 100%;
+  margin-top: 65px;
+  border-bottom: 1px solid #e7e9f1;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #2f2f2f;
+}
+
+.day-of-week {
+  padding-bottom: 26px;
+
+  user-select: none;
+  color: #dadeea;
+  border-bottom: 1px solid #e7e9f1;
+}
+
+.day {
+  padding-top: 8px;
+}
+
+.last-week {
+  padding-bottom: 17px;
+}
+
+.day-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 29px;
+  height: 29px;
+
+  margin: 0 auto;
+
+  border-radius: 15px;
+  transition: all .5s linear;
+}
+
+.day-link:hover {
+  background-color: #ffbf0166;
+}
+
+.day-link:focus {
+  background-color: #ffbf01;
+}
+
+.actual-day {
+  color: #fff;
+}
+
+.chosen-day {
+  color: #fff;
+  background-color: #ffbf01;
+}
+
+.not-active {
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  color: #dadeea;
+  filter: grayscale(100%) contrast(0.2) brightness(1.5);
+}
+
+.reserve-list {
+  flex-basis: 60%;
+  flex-grow: 1;
+}
+
+.staff-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-right: 231px;
+  margin-bottom: 45px;
+  margin-left: 108px;
+  padding: 0;
+  padding-top: 12px;
+
+}
+
+.staff-list__item {
+  list-style-type: none;
+}
+
+.staff-list__item:first-child {
+  margin-right: 15px;
+}
+
+.staff-list__link {
+  display: flex;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staff-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  transition: border .5s linear;
+}
+
+.staff-rank {
+  padding-top: 5px;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.3px;
+
+  text-transform: uppercase;
+
+  color: #2f2f2f;
+
+  transition: color .5s linear;
+}
+
+.active-staff > .staff-icon {
+  width: 52px;
+  height: 52px;
+}
+
+.active-staff > .staff-rank {
+  padding-top: 3px;
+}
+
+.reserve-note {
+  display: none;
+}
+
+.reserve-note.active {
+  display: block;
+}
+
+.reserve-time {
+  margin-left: 98px;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0.45px;
+
+  color: #2f2f2f;
+}
+
+.reserve-time::after {
+  content: ':';
+}
+
+.timetable {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 51px;
+  margin-left: 98px;
+  margin-right: 253px;
+  padding: 0;
+
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #2f2f2f;
+}
+
+.timetable::after {
+  content: '';
+
+  position: absolute;
+  top: 46%;
+  display: block;
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #e7e9f1;
+
+}
+
+.timetable__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-reserve {
+  margin-bottom: 43px;
+
+  user-select: none;
+  font-weight: 700;
+
+  transition: color .5s linear;
+}
+
+.reserve-status-link {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: #ffbf01;
+}
+
+.servise-price {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-top: 95px;
+  margin-left: 97px;
+  margin-right: 222px;
+  padding: 0;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #2f2f2f;
+}
+
+.servise-price__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servise-list {
+  margin-bottom: 44px;
+  
+  user-select: none;
+  text-transform: uppercase;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: color .5s linear;
+}
+
+.price {
+  font-size: 12px;
+}
+
+.price::after {
+  content: 'USD';
+  margin-left: 5px;
+}
+
+.comment-title {
+  margin: 0;
+  margin-top: 81px;
+  margin-left: 98px;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+
+  text-transform: uppercase;
+  color: #2f2f2f;
+}
+
+.comment-title::before {
+  content: '';
+  display: inline-block;
+
+  width: 50px;
+  height: 46px;
+
+  margin-right: 29px;
+
+  background-image: url('../images/quote@2x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.comment-text {
+  max-width: 465px;
+
+  margin: 0;
+  margin-top: 24px;
+  margin-left: 98px;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.35px;
+
+  color: #2f2f2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

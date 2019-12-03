@@ -1,0 +1,56 @@
+.header {
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  transition: background-color .5s linear;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  margin-left: 228px;
+  padding-left: 0;
+}
+
+.menu__item {
+  position: relative;
+
+  margin-right: 110px;
+
+  list-style-type: none;
+}
+
+.menu__link {
+  display: block;
+
+  padding-top: 38px;
+  padding-bottom: 42px;
+
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+
+  color: #fff;
+
+  text-transform: uppercase;
+}
+
+.menu__item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0em;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #fff;
+  transition: all .35s ease-in-out;
+}
+
+.menu__item:hover::after,
+.menu__item:focus::after {
+  width:100%;
+}

@@ -1,0 +1,139 @@
+.footer__container {
+  display: flex;
+
+  margin-left: 94px;
+  padding-top: 33px;
+  padding-bottom: 18px;
+  padding-left: 54px;
+  padding-right: 188px;
+
+  background-color: #f4f6fb;
+}
+
+.footer-logo {
+  margin-top: 17px;
+  filter: brightness(6);
+}
+
+.footer-menu {
+  display: flex;
+  flex-grow: 1;
+
+  margin: 0;
+  margin-left: 113px;
+  padding: 0;
+}
+
+.footer-menu__item {
+  display: block;
+
+  flex-basis: 20%;
+  flex-grow: 1;
+}
+
+.correct {
+  flex-basis: 28%;
+}
+
+.correct-two {
+  flex-basis: 18%;
+}
+
+.footer-menu__link {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+
+  color: #68696a;
+}
+
+.footer-sub-menu {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.sub-menu__item {
+  display: block;
+}
+
+.sub-menu__link {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+
+  color: #cfcfcf;
+}
+
+.subscribe-form {
+  position: relative;
+  width: 200px;
+
+  margin-top: 16px;
+}
+
+.subscribe-field {
+  width: 100%;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  padding-right: 35px;
+
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+
+  color: #c8c8c9;
+  background-color: #ebebeb;
+  border: 1px solid #e8e8e8;
+  border-radius: 2em;
+}
+
+.subscribe-btn {
+  position: absolute;
+  right: 0;
+
+  width: 65px;
+  height: 100%;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border: none;
+  border-radius: 2em;
+
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  background-image: url('../images/send-button@2x.png');
+
+  transition: background-color .5s linear;
+}
+
+.subscribe-btn,
+.subscribe-field {
+  outline: none;
+}
+
+
+.footer__copyright {
+  text-align: center;
+  padding: 9px 0;
+
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+
+  color: #cfcfcf;
+  background-color: #f4f6fb;
+}
+
+.footer__copyright-text {
+    margin: 0;
+}

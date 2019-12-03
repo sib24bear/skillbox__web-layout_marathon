@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HAIR STYLE</title>
+    <link rel="preload" href="fonts/GothamPro.woff2" as="font">
+    <link rel="preload" href="fonts/GothamPro-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/GothamPro-Bold.woff2" as="font">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/promo.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/decor.css">
+    <link rel="stylesheet" href="css/modal-frame.css">
+    <link rel="stylesheet" href="css/tablet-screen.css">
+    <link rel="stylesheet" href="css/mobile-screen.css">
+  </head>
+  <body class="salon-page theme_blue">
+    <header class="header">
+      <nav>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#anchor-home">Home</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#anchor-about">About</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#anchor-services">Services</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#anchor-contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="aside-contacts">
+      <a class="logo-link aside-logo" href="#anchor-home">
+        <img class="logo-img" src="images/main-logo@2x.png" alt="hair style logo">
+      </a>
+
+      <a class="hidden-menu" href="#">
+        <span class="hidden-menu__line"></span>
+        <span class="hidden-menu__line"></span>
+      </a>
+
+      <ul class="social-contact">
+        <li class="social-contact__item">
+          <a class="social-contact__link social-contact__link_whatsapp" href="#"></a>
+        </li>
+
+        <li class="social-contact__item">
+          <a class="social-contact__link social-contact__link_twitter" href="#"></a>
+        </li>
+
+        <li class="social-contact__item">
+          <a class="social-contact__link social-contact__link_messenger" href="#"></a>
+        </li>
+      </ul>
+
+      <a class="calendar-link" href="#anchor-calendar"></a>
+    </aside>
+
+    <main class="main">
+      <section class="promo" id="anchor-home">
+        <div class="title__container">
+          <h1 class="title">
+            <a class="title-link" href="#">
+              <img class="title-img title-img__theme_blue active" src="images/promo-img_1@2x.png" alt="beauty text">
+              <img class="title-img title-img__theme_pink" src="images/promo-img_2@2x.png" alt="beauty text">
+            </a>
+          </h1>
+
+          <div class="slider-tabs">
+            <button class="slider-tabs__control control-left"></button>
+
+            <button class="slider-tabs__control control-right"></button>
+          </div>
+        </div>
+
+        <img class="promo-photo faded in active" src="images/promo-photo_1@2x.jpg" alt="girl photo">
+        <img class="promo-photo faded" src="images/promo-photo_2@2x.jpg" alt="girl photo">
+      </section>
+
+      <section class="about" id="anchor-about">
+        <img class="about-img fade show active" src="images/about-photo.webp" alt="girl photo">
+        <img class="about-img fade" src="images/about-photo_2.webp" alt="girl photo">
+
+        <div class="about__container">
+          <h2 class="about__title">We make
+            <mark class="mark">beauty</mark>,
+            <br>and someone considers it art
+          </h2>
+
+          <p class="about__text">Having started my career, I could not think
+            of reaching such heights. It’s already difficult to call
+            us a beauty salon. From now on, we are a beauty house,
+            where the family is not only our masters,
+            but also our customers.
+          </p>
+
+          <a class="about__link" href="#">read more</a>
+        </div>
+      </section>
+
+      <section class="services" id="anchor-services">
+        <div class="calendar__container" id="anchor-calendar">
+          <div class="title__calendar">
+            <time class="date-time" datetime="2019-10-02">
+              <span class="date-icon">02</span> October 2019
+            </time>
+
+            <button class="calendar-tabs__control calendar-left"></button>
+
+            <button class="calendar-tabs__control calendar-right"></button>
+          </div>
+
+          <table class="calendar">
+            <thead>
+              <tr>
+                <td class="day-of-week">Mon</td>
+                <td class="day-of-week">Tue</td>
+                <td class="day-of-week">Wed</td>
+                <td class="day-of-week">Thu</td>
+                <td class="day-of-week">Fri</td>
+                <td class="day-of-week">Sat</td>
+                <td class="day-of-week">Sun</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="day"><a class="day-link" href="#"></a></td>
+                <td class="day"><a class="day-link" href="#">1</a></td>
+                <td class="day"><a class="day-link actual-day" href="#">2</a></td>
+                <td class="day"><a class="day-link" href="#">3</a></td>
+                <td class="day"><a class="day-link" href="#">4</a></td>
+                <td class="day"><a class="day-link not-active" href="#">5</a></td>
+                <td class="day"><a class="day-link not-active" href="#">6</a></td>
+              </tr>
+
+              <tr>
+                <td class="day"><a class="day-link" href="#">7</a></td>
+                <td class="day"><a class="day-link" href="#">8</a></td>
+                <td class="day"><a class="day-link" href="#">9</a></td>
+                <td class="day"><a class="day-link" href="#">10</a></td>
+                <td class="day"><a class="day-link" href="#">11</a></td>
+                <td class="day"><a class="day-link not-active" href="#">12</a></td>
+                <td class="day"><a class="day-link not-active" href="#">13</a></td>
+              </tr>
+
+              <tr>
+                <td class="day"><a class="day-link" href="#">14</a></td>
+                <td class="day"><a class="day-link" href="#">15</a></td>
+                <td class="day"><a class="day-link" href="#">16</a></td>
+                <td class="day"><a class="day-link" href="#">17</a></td>
+                <td class="day"><a class="day-link chosen-day" href="#">18</a></td>
+                <td class="day"><a class="day-link not-active" href="#">19</a></td>
+                <td class="day"><a class="day-link not-active" href="#">20</a></td>
+              </tr>
+
+              <tr>
+                <td class="day"><a class="day-link" href="#">21</a></td>
+                <td class="day"><a class="day-link" href="#">22</a></td>
+                <td class="day"><a class="day-link" href="#">23</a></td>
+                <td class="day"><a class="day-link" href="#">24</a></td>
+                <td class="day"><a class="day-link" href="#">25</a></td>
+                <td class="day"><a class="day-link not-active" href="#">26</a></td>
+                <td class="day"><a class="day-link not-active" href="#">27</a></td>
+              </tr>
+
+              <tr>
+                <td class="day last-week"><a class="day-link" href="#">28</a></td>
+                <td class="day last-week"><a class="day-link" href="#">29</a></td>
+                <td class="day last-week"><a class="day-link" href="#">30</a></td>
+                <td class="day last-week"><a class="day-link" href="#">31</a></td>
+                <td class="day last-week"><a class="day-link not-active" href="#"></a></td>
+                <td class="day last-week"><a class="day-link not-active" href="#"></a></td>
+                <td class="day last-week"><a class="day-link not-active" href="#"></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="reserve-list">
+          <ul class="staff-list">
+            <li class="staff-list__item">
+              <a class="staff-list__link active-staff" href="#master">
+                <img class="staff-icon" src="images/staff-icon-1.jpg" alt="staff photo">
+                <span class="staff-rank">master</span>
+              </a>
+            </li>
+            <li class="staff-list__item">
+              <a class="staff-list__link" href="#stylist">
+                <img class="staff-icon" src="images/staff-icon-2.jpg" alt="staff photo">
+                <span class="staff-rank">stylist</span>
+              </a>
+            </li>
+            <li class="staff-list__item">
+              <a class="staff-list__link" href="#topStylist">
+                <img class="staff-icon" src="images/staff-icon-3.jpg" alt="staff photo">
+                <span class="staff-rank">top stylist</span>
+              </a>
+            </li>
+            <li class="staff-list__item">
+              <a class="staff-list__link not-active" href="#expert">
+                <img class="staff-icon" src="images/staff-icon-4.jpg" alt="staff photo">
+                <span class="staff-rank">expert</span>
+              </a>
+            </li>
+            <li class="staff-list__item">
+              <a class="staff-list__link" href="#topExpert">
+                <img class="staff-icon" src="images/staff-icon-5.jpg" alt="staff photo">
+                <span class="staff-rank">top expert</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="reserve-note active" id="master">
+            <time class="reserve-time" datetime="2019-10-18">
+              18 October 2019
+            </time>
+
+            <ul class="timetable">
+              <li class="timetable__item">
+                <span class="time-reserve">09:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">11:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">13:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve">15:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">17:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+            </ul>
+
+            <ul class="servise-price">
+              <li class="servise-price__item">
+                <span class="servise-list">haircut</span>
+                <span class="price">18</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">coloring</span>
+                <span class="price">38</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">styling</span>
+                <span class="price">16</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">hair restoration</span>
+                <span class="price">35</span>
+              </li>
+            </ul>
+
+            <h3 class="comment-title">Anna Mane</h3>
+            <p class="comment-text">I want to say thank you very much for the professionalism
+              and&nbsp;comfort that reigns in your salon. Any master of your salon
+              has vast experience behind him.</p>
+          </div>
+          <div class="reserve-note" id="stylist">
+            <time class="reserve-time" datetime="2019-10-18">
+              18 October 2019
+            </time>
+
+            <ul class="timetable">
+              <li class="timetable__item">
+                <span class="time-reserve">11:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve">13:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve">15:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve">17:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve">19:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+            </ul>
+
+            <ul class="servise-price">
+              <li class="servise-price__item">
+                <span class="servise-list">haircut</span>
+                <span class="price">28</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">coloring</span>
+                <span class="price">58</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">styling</span>
+                <span class="price">26</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">hair restoration</span>
+                <span class="price">55</span>
+              </li>
+            </ul>
+
+            <h3 class="comment-title">Mane Anna</h3>
+            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="reserve-note" id="topStylist">
+            <time class="reserve-time" datetime="2019-10-18">
+              18 October 2019
+            </time>
+
+            <ul class="timetable">
+              <li class="timetable__item">
+                <span class="time-reserve">07:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">09:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">11:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve">14:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">16:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+            </ul>
+
+            <ul class="servise-price">
+              <li class="servise-price__item">
+                <span class="servise-list">haircut</span>
+                <span class="price">48</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">coloring</span>
+                <span class="price">48</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">styling</span>
+                <span class="price">46</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">hair restoration</span>
+                <span class="price">45</span>
+              </li>
+            </ul>
+
+            <h3 class="comment-title">illo inventore</h3>
+            <p class="comment-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+          <div class="reserve-note" id="expert">
+            <time class="reserve-time" datetime="2019-10-18">
+              18 October 2019
+            </time>
+
+            <ul class="timetable">
+              <li class="timetable__item">
+                <span class="time-reserve">09:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">11:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">13:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve">15:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">17:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+            </ul>
+
+            <ul class="servise-price">
+              <li class="servise-price__item">
+                <span class="servise-list">haircut</span>
+                <span class="price">18</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">coloring</span>
+                <span class="price">38</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">styling</span>
+                <span class="price">16</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">hair restoration</span>
+                <span class="price">35</span>
+              </li>
+            </ul>
+
+            <h3 class="comment-title">Anna Mane</h3>
+            <p class="comment-text">I want to say thank you very much for the professionalism
+              and&nbsp;comfort that reigns in your salon. Any master of your salon
+              has vast experience behind him.</p>
+          </div>
+          <div class="reserve-note" id="topExpert">
+            <time class="reserve-time" datetime="2019-10-18">
+              18 October 2019
+            </time>
+
+            <ul class="timetable">
+              <li class="timetable__item">
+                <span class="time-reserve">09:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">11:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">13:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve">15:00</span>
+                <a class="reserve-status-link" href="#">free</a>
+              </li>
+
+              <li class="timetable__item">
+                <span class="time-reserve not-active">17:00</span>
+                <a class="reserve-status-link not-active" href="#">reserved</a>
+              </li>
+            </ul>
+
+            <ul class="servise-price">
+              <li class="servise-price__item">
+                <span class="servise-list">haircut</span>
+                <span class="price">18</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">coloring</span>
+                <span class="price">38</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">styling</span>
+                <span class="price">16</span>
+              </li>
+
+              <li class="servise-price__item">
+                <span class="servise-list">hair restoration</span>
+                <span class="price">35</span>
+              </li>
+            </ul>
+
+            <h3 class="comment-title">Anna Mane</h3>
+            <p class="comment-text">I want to say thank you very much for the professionalism
+              and&nbsp;comfort that reigns in your salon. Any master of your salon
+              has vast experience behind him.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contacts" id="anchor-contacts">
+        <div class="map" id="map" >
+        </div>
+
+        <svg class="filter">
+          <defs>
+            <filter id="blueColor">
+              <feColorMatrix
+                type = "matrix"
+                values="0.15     0     0     0     0
+                        0     0.23     0     0     0
+                        0     0     0.53     0     0
+                        0     0     0     1     0 "/>
+
+              <feFlood result="floodFill" x="0" y="0" width="100%" height="100%" flood-color="#2360d4" flood-opacity="1"/>
+
+              <feBlend in="SourceGraphic" in2="floodFill" mode="screen"/>
+            </filter>
+          </defs>
+        </svg>
+
+        <div class="contact-cards">
+          <div class="feedback-form__container">
+            <h4 class="feedback-form__title">Send Message</h4>
+
+            <form class="feedback-form" id="feedbackForm" method="get" action="https://echo.htmlacademy.ru" enctype="text/plain" target="_blank">
+              <div class="form-container">
+                <label class="title-input" for="userName">Your Name</label>
+                <input class="feedback-form__item input-name" id="userName" name="userName" type="text" placeholder="Tatiana">
+
+                <label class="title-input" for="userPhone">Phone</label>
+                <input class="feedback-form__item input-phone" id="userPhone" name="userPhone" type="tel" placeholder="+7 982 216 21 82">
+              </div>
+
+              <input class="feedback-form__item input-message" name="userMessage" type="text" placeholder="Message">
+
+              <button class="submit-btn" type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="feedback-form-contacts">
+            <h4 class="contacts__title">Contact Information</h4>
+
+            <address class="address">Bolshoi Sukharevsky Lane, 14 Moscow city, 623998</address>
+
+            <a class="contact-link contact-link_phone" href="tel:+7**********">+7 (3466) 413-413</a>
+
+            <a class="contact-link contact-link_email" href="mailto:maksim@girev.com">beauty@mail.ru</a>
+
+            <ul class="social-contact feedback-social">
+              <li class="social-contact__item feedback-social__item">
+                <a class="social-contact__link feedback-social__link_whatsapp" href="#"></a>
+              </li>
+
+              <li class="social-contact__item feedback-social__item">
+                <a class="social-contact__link feedback-social__link_twitter" href="#"></a>
+              </li>
+
+              <li class="social-contact__item feedback-social__item">
+                <a class="social-contact__link feedback-social__link_messenger" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="logo-link footer-logo" href="#anchor-home">
+          <img class="logo-img" src="images/main-logo@2x.png" alt="hair style logo">
+        </a>
+
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#anchor-about">about</a>
+
+            <ul class="footer-sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Our history</a>
+              </li>
+
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Salon</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-menu__item correct">
+            <a class="footer-menu__link" href="#">portfolio</a>
+
+            <ul class="footer-sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Arcihive</a>
+              </li>
+
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Awards</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-menu__item correct-two">
+            <a class="footer-menu__link" href="#anchor-services">Services</a>
+
+            <ul class="footer-sub-menu">
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#">Online</a>
+              </li>
+
+              <li class="sub-menu__item">
+                <a class="sub-menu__link" href="#anchor-calendar">Calendar</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">subscribe</a>
+
+            <form class="subscribe-form" id="subscribeForm" method="get" action="https://echo.htmlacademy.ru" enctype="text/plain">
+              <input class="subscribe-field" name="subscribeMail" type="email" placeholder="Enter your email">
+
+              <button class="subscribe-btn" type="submit"></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">© 2019 All righyt reserved</p>
+      </div>
+    </footer>
+
+    <div class="modal-inner">
+      <div class="modal-container">
+        <div class="modal-head">
+          <h4 class="modal-title">reSERVATION</h4>
+          <button class="close-btn" type="button" aria-label="Закрыть окно"></button>
+        </div>
+        <div class="modal-content">
+          <a class="staff-list__link active-staff" href="#master">
+            <img class="staff-icon" src="images/staff-icon-1.jpg" alt="staff photo">
+            <span class="staff-rank">master</span>
+          </a>
+
+          <time class="choose-time" datetime="2019-10-18T15:00">
+              18 Oct, 2019, 15:00
+          </time>
+
+          <p class="service-choose">Choose a service</p>
+
+          <ul class="choose-list">
+            <li class="choose-list__item">
+              <a class="choose-list_link" href="#">haircut</a>
+            </li>
+            <li class="choose-list__item">
+              <a class="choose-list_link" href="#">coloring</a>
+            </li>
+            <li class="choose-list__item">
+              <a class="choose-list_link" href="#">styling</a>
+            </li>
+            <li class="choose-list__item">
+              <a class="choose-list_link" href="#">hair restoration</a>
+            </li>
+          </ul>
+
+          <div class="form-container choose-form">
+            <label class="title-input" for="userNameModal">Your Name</label>
+            <input class="feedback-form__item input-name" id="userNameModal" name="userName" type="text" placeholder="Tatiana">
+
+            <label class="title-input" for="userPhoneModal">Phone</label>
+            <input class="feedback-form__item input-phone" id="userPhoneModal" name="userPhone" type="tel" placeholder="+7 982 216 21 82">
+          </div>
+
+          <button class="submit-btn" type="submit">reserve</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=82604ef7-8593-437b-bfa2-f6ca9969f96a"></script>
+    <script src="js/mapbasics.js"></script>
+  	<script src="js/common.js"></script>
+  </body>
+</html>

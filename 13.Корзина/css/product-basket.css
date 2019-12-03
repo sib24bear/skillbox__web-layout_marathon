@@ -1,0 +1,229 @@
+.popup__basket {
+  position: absolute;
+  right: 0;
+
+  width: 559px;
+
+  margin: 0 auto;
+
+  background-color: #f2f7fa;
+  z-index: 1150;
+  transition: all 0.8s ease-in-out;
+}
+
+.selected-goods {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  max-height: 343px;
+}
+
+.selected-goods::-webkit-scrollbar {
+	width: 18px;
+}
+
+.selected-goods::-webkit-scrollbar-track {
+  border: 5px solid #f2f7fa;
+  border-radius: 8px;
+  background-color: #dbe0e8;
+}
+
+.selected-goods::-webkit-scrollbar-thumb {
+  border-left: 5px solid #f2f7fa;
+  border-right: 5px solid #f2f7fa;
+
+  border-radius: 6px;
+  background-color: #b9becd;
+}
+
+.selected-goods__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 498px;
+
+  margin-left: 1.95em;
+  margin-right: 0.7em;
+  padding: 1.85em 0;
+  padding-left: 0.2em;
+
+  background-color: #f2f7fa;
+  border-top: 1px solid #e6e8f2;
+}
+
+.selected-goods__item:first-child {
+  border-top: none;
+}
+
+.product__img {
+  width: 56px;
+  height: 54px;
+  object-fit: cover;
+}
+
+.product__category {
+  flex-grow: 2;
+  align-self: flex-start;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-left: 1.4em;
+}
+
+.product-category__link {
+  margin-top: -5px;
+
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.selected-goods__name {
+  margin: 0;
+  margin-top: 7px;
+}
+
+.goods-name__link {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+
+  color: #0f1a4c;
+}
+
+.selected-goods__price {
+  flex-grow: 2;
+  text-align: right;
+
+  margin-top: 0.35em;
+  margin-right: 1em;
+
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #0f1a4c;
+}
+
+.selected-goods__price::after {
+  content: 'р';
+  margin-left: 0.3em;
+}
+
+.remove-product__btn {
+  width: 21px;
+  height: 21px;
+
+  margin-top: 1em;
+
+  background-color: inherit;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='42' viewBox='0 0 21 21'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23989cb2; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='bin-icon' class='cls-1' d='M1528,134h13a4,4,0,0,1,4,4v13a4,4,0,0,1-4,4h-13a4,4,0,0,1-4-4V138A4,4,0,0,1,1528,134Zm11.01,8v7.957a1.082,1.082,0,0,1-1.12,1.042h-6.78a1.082,1.082,0,0,1-1.12-1.042V142h-0.84v-1.5h0.62a0.868,0.868,0,0,1,.78-0.519h1.71V139.9a1.089,1.089,0,0,1,1.26-1.22h1.96a1.089,1.089,0,0,1,1.26,1.22v0.081h1.71a0.868,0.868,0,0,1,.78.519h0.62V142h-0.84Zm-6,.885h-0.99v6.241h0.99v-6.241Zm1.99,0h-1v6.241h1v-6.241Zm2.02,0h-1.03v6.241h1.03v-6.241Z' transform='translate(-1524 -134)'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px;
+  border: none;
+
+  transition: box-shadow .35s linear;
+}
+
+.remove-product__btn:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='42' viewBox='0 0 21 21'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ff4019; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='bin-icon' class='cls-1' d='M1528,134h13a4,4,0,0,1,4,4v13a4,4,0,0,1-4,4h-13a4,4,0,0,1-4-4V138A4,4,0,0,1,1528,134Zm11.01,8v7.957a1.082,1.082,0,0,1-1.12,1.042h-6.78a1.082,1.082,0,0,1-1.12-1.042V142h-0.84v-1.5h0.62a0.868,0.868,0,0,1,.78-0.519h1.71V139.9a1.089,1.089,0,0,1,1.26-1.22h1.96a1.089,1.089,0,0,1,1.26,1.22v0.081h1.71a0.868,0.868,0,0,1,.78.519h0.62V142h-0.84Zm-6,.885h-0.99v6.241h0.99v-6.241Zm1.99,0h-1v6.241h1v-6.241Zm2.02,0h-1.03v6.241h1.03v-6.241Z' transform='translate(-1524 -134)'/%3E%3C/svg%3E%0A");
+}
+
+.remove-product__btn:hover,
+.remove-product__btn:focus {
+  outline: none;
+  box-shadow: 0 0 15px #00000045;
+}
+
+.order-goods {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1.9em 1.9em;
+  background-color: #f2f7fa;
+  border-top: 1px solid #e6e8f2;
+}
+
+.order-btn {
+  flex-grow: 2;
+  text-align: left;
+  padding: 1em 1.5em;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+
+  color: #fff;
+  border: none;
+  border-radius: 2em;
+  background-image: url('../images/order-icon@2x.png'), linear-gradient(90deg, #00a7cc, #23bad4);
+  background-repeat: no-repeat;
+  background-size: 8px, contain;
+  background-position: center right 1.5em, left;
+
+  transition: box-shadow .35s linear;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  outline: none;
+  box-shadow: 0 0 15px #00000045;
+}
+
+.order-total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-left: 2.45em;
+  margin-right: 2.9em;
+}
+
+.total-counter {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.total-counter::before {
+  content: '';
+  display: inline-block;
+
+  width: 1em;
+  height: 1em;
+
+  margin-right: 0.3em;
+
+  background-image: url('../images/stack-icon@2x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1em;
+}
+
+.total-counter::after {
+  content: ' на сумму';
+}
+
+.total-price {
+  margin-bottom: -3px;
+
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #00a7cc;
+}
+
+.total-price::after {
+  content: 'р';
+  margin-left: 0.3em;
+}

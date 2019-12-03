@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AXIT</title>
+    <link rel="preload" href="fonts/open-sans-v17-latin-regular.woff2" as="font">
+    <link rel="preload" href="fonts/open-sans-v17-latin-600.woff2" as="font">
+    <link rel="preload" href="fonts/open-sans-v17-latin-700.woff2" as="font">
+    <link rel="preload" href="fonts/raleway-v14-latin-100.woff2" as="font">
+    <link rel="preload" href="fonts/raleway-v14-latin-regular.woff2" as="font">
+    <link rel="preload" href="fonts/raleway-v14-latin-700.woff2" as="font">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/promo.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/sub-list.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a class="logo header__logo" href="#">
+          <picture class="logo__picture">
+            <source media="(min-width: 1000px)"
+                    srcset="image/logo_desctop@1x.png 1x,
+                            image/logo_desctop@2x.png 2x"
+            >
+
+            <source media="(min-width: 768.9px)"
+                    srcset="image/logo_tablet@1x.png 1x,
+                            image/logo_tablet@2x.png 2x"
+            >
+
+            <img class="logo__img"
+            src="image/logo_mobile@1x.png"
+            srcset="image/logo_mobile@2x.png 2x"
+            alt="AXIT logo">
+          </picture>
+        </a>
+
+        <nav class="nav header__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#features">Features</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pricing</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Reviews</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="promo">
+        <div class="wrapper promo__wrapper">
+          <div class="promo__inner">
+            <a class="logo promo__logo" href="#">
+              <picture class="logo__picture">
+                <source media="(min-width: 1000px)"
+                        srcset="image/logo_desctop@1x.png 1x,
+                                image/logo_desctop@2x.png 2x"
+                >
+
+                <source media="(min-width: 768.9px)"
+                        srcset="image/logo_tablet@1x.png 1x,
+                                image/logo_tablet@2x.png 2x"
+                >
+
+                <img class="logo__img"
+                src="image/logo_mobile@1x.png"
+                srcset="image/logo_mobile@2x.png 2x"
+                alt="AXIT logo">
+              </picture>
+            </a>
+
+            <h1 class="axit-title promo__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+
+            <p class="axit-text promo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+
+            <a class="download-link promo__btn" href="#" role="button">Download</a>
+          </div>
+
+          <div class="axit-form__outer">
+            <h2 class="title axit-form__title">Try your
+              <span class="form__title_item">free</span> trial today
+            </h2>
+
+            <form class="axit-form promo__form" id="axitForm" method="get" action="https://echo.htmlacademy.ru" enctype="text/plain" target="_blank">
+              <input class="axit-form__item input-name" name="userName" type="text" placeholder="Name">
+
+              <input class="axit-form__item input-email" name="userEmail" type="email" placeholder="Email">
+
+              <input class="axit-form__item input-password" name="userPassword" type="password" placeholder="Password">
+            </form>
+
+            <button class="btn submit-btn" form="axitForm" type="submit">Get started</button>
+          </div>
+        </div>
+      </section>
+      <section class="social">
+        <div class="wrapper social__wrapper">
+          <div class="social__inner">
+            <h2 class="social__title">Social media</h2>
+
+            <p class="social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+          </div>
+
+          <ul class="social-servise">
+            <li class="social-servise__item">
+              <a class="social-servise__link" href="https://www.facebook.com" target="_blank">
+                  <img class="social-servise__img" src="image/facebook.svg" alt="Facebook logo">
+              </a>
+            </li>
+
+            <li class="social-servise__item">
+              <a class="social-servise__link" href="https://www.twitter.com" target="_blank">
+                <img class="social-servise__img" src="image/twitter.svg" alt="Twitter logo">
+              </a>
+            </li>
+
+            <li class="social-servise__item">
+              <a class="social-servise__link" href="https://www.instagram.com" target="_blank">
+                <img class="social-servise__img" src="image/instagram.svg" alt="Instagram logo">
+              </a>
+            </li>
+
+            <li class="social-servise__item">
+              <a class="social-servise__link" href="https://wikipedia.org/wiki/Google%2B" target="_blank">
+                <img class="social-servise__img" src="image/google-plus.svg" alt="Google Plus logo">
+              </a>
+            </li>
+            <li class="social-servise__item">
+              <a class="social-servise__link" href="https://www.pinterest.com" target="_blank">
+                  <img class="social-servise__img" src="image/pinterest.svg" alt="Pinterest logo">
+              </a>
+            </li>
+
+            <li class="social-servise__item">
+              <a class="social-servise__link" href="https://www.tumblr.com" target="_blank">
+                <img class="social-servise__img" src="image/tumblr.svg" alt="Tumblr logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <h2 class="visually-hidden">headline</h2>
+        <div class="wrapper features__wrapper">
+          <ul class="tabs features__tabs">
+            <li class="tabs__item">
+              <button class="btn tabs__btn" type="button">tab&nbsp;1</button>
+            </li>
+
+            <li class="tabs__item">
+              <button class="btn tabs__btn" type="button">tab&nbsp;2</button>
+            </li>
+
+            <li class="tabs__item">
+              <button class="btn tabs__btn" type="button">tab&nbsp;3</button>
+            </li>
+          </ul>
+
+          <article class="features-article">
+            <h2 class="features-article__title">Tabs with soft transitioning effect.</h2>
+
+            <p class="features-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+              justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.
+            </p>
+
+            <p class="features-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+            </p>
+
+            <a class="features-article__btn" href="#" role="button">Download</a>
+          </article>
+          <img class="features-article__img" src="image/image_features.png" alt="sity image">
+        </div>
+      </section>
+      <section class="features-sub-list">
+        <div class="wrapper sub-list__wrapper">
+          <img class="sub-list__img" src="image/sub-list_img.jpg" alt="screenshot">
+
+          <div class="sub-list__inner">
+            <h2 class="sub-list__title">Sub list section</h2>
+
+            <p class="sub-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+
+            <div class="article article__upload sub-list__article">
+              <h2 class="article__title">Title</h2>
+
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean euismod bibendum laoreet.</p>
+            </div>
+
+            <div class="article article__download sub-list__article">
+              <h2 class="article__title">Title</h2>
+
+              <p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script> </script>
+  </body>
+</html>

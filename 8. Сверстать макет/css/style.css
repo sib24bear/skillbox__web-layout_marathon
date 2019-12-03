@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+
+	font-family: 'Open Sans', 'Raleway', sans-serif;
+	font-size: 20px;
+	line-height: normal;
+	letter-spacing: normal;
+
+	background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+a:focus {
+  outline: none;
+}
+
+a, button:hover {
+  cursor: pointer;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.wrapper {
+	position: relative;
+
+	width: 100%;
+	max-width: 1104px;
+
+	margin: 0 auto;
+
+  z-index: 1000;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #fff;
+  background-color: inherit;
+
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #ffffffad;
+}

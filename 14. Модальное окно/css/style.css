@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+}
+
+.field {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('../image/pattern.png');
+}
+
+.btn {
+  padding: 1em 3em;
+
+  font-family: 'PF DinDisplay Pro', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+
+  color: #c7d5ca;
+
+  border: none;
+  outline: none;
+  border-radius: 15px;
+
+  background-color: #273439;
+
+  cursor: pointer;
+
+  transition-property: background-color, box-shadow, color;
+  transition-duration: .6s, .6s, .6s;
+  transition-timing-function: linear, ease-in-out, linear;
+}
+
+.btn:hover {
+  background-color: #0e232e;
+  box-shadow: 0 0 20px #000000de;
+  color: #fff;
+}
+
+.btn:focus {
+  box-shadow: 0 0 20px #000000de;
+  color: #fff;
+}

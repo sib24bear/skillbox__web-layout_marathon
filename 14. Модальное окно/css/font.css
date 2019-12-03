@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'PF DinDisplay Pro';
+    font-weight: bold;
+    font-style: normal;
+    src: local('PFDinDisplayPro-Bold'),
+        url('../fonts/PFDinDisplayPro-Bold.woff') format('woff');
+}

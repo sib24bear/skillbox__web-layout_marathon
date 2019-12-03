@@ -1,0 +1,240 @@
+.contacts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  margin-left: 94px;
+  margin-top: 96px;
+  padding-bottom: 119px;
+
+  background-color: #f4f6fb;
+}
+
+.map {
+  width: 100%;
+  height: calc(100vh - 364px);
+
+}
+
+.filter {
+  height: 0;
+  position: absolute;
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+  filter: grayscale(100%) url(#blueColor);
+}
+
+.contact-cards {
+  position: absolute;
+  bottom: 0;
+  left: 17.4%;
+
+  display: flex;
+
+  box-shadow: 0 0 19px 1px rgba(17, 26, 61, 0.1);
+}
+
+.feedback-form__container {
+  width: 481px;
+
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 42px;
+  padding-right: 80px;
+
+  border-radius: 2px 0 0 2px;
+
+  background-color: #fff;
+}
+
+.feedback-form__title {
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  color: #1b1b1b;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+
+  height: 38px;
+
+  margin-bottom: 37px;
+}
+
+.title-input {
+  height: 40%;
+
+  width: 159px;
+
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+
+  color: #c8c8c9;
+}
+
+.feedback-form__item {
+
+  width: 159px;
+  height: 60%;
+
+  padding: 3px 0;
+
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+
+  border: none;
+  border-bottom: 1px solid #6d707966;
+
+  color: #1b1b1b;
+}
+
+.feedback-form__item:focus {
+  outline: none;
+}
+
+.input-message {
+  flex-basis: 100%;
+
+  width: 360px;
+
+  margin-bottom: 42px;
+}
+
+.submit-btn {
+  padding: 1em 5.68em;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+
+  color: #fff;
+
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+
+  transition: background-color .5s linear;
+}
+
+.feedback-form-contacts {
+  width: 320px;
+
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 41px;
+  padding-right: 61px;
+
+  border-radius: 0 2px 2px 0;
+
+  transition: background-color .5s linear;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  color: #fff;
+}
+
+.address {
+  display: block;
+
+  margin-bottom: 18px;
+  padding-left: 36px;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+
+  color: #fff;
+
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: left;
+  background-image: url('../images/location-pin_копия@2x.png');
+}
+
+.contact-link {
+  display: block;
+
+  padding-left: 36px;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+
+  color: #fff;
+}
+
+.contact-link_phone {
+  margin-bottom: 23px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: left;
+  background-image: url('../images/icon@2x.png');
+}
+
+.contact-link_email {
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: left;
+  background-image: url('../images/envelope@2x.png');
+}
+
+.feedback-social {
+  flex-direction: row;
+
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.feedback-social__item {
+  margin-top: 0;
+  margin-right: 32px;
+}
+
+.feedback-social__link_whatsapp {
+  background-size: cover;
+  background-position: -61px;
+  background-image: url('../images/spritesheet.png');
+}
+
+.feedback-social__link_twitter {
+  background-size: cover;
+  background-position: -40px;
+  background-image: url('../images/spritesheet.png');
+}
+
+.feedback-social__link_messenger {
+  background-size: cover;
+  background-position: -20px;
+  background-image: url('../images/spritesheet.png');
+}

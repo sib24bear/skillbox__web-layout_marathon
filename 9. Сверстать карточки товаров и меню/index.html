@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин</title>
+    <link rel="preload" href="fonts/SegoeUI-Light.woff2" as="font">
+    <link rel="preload" href="fonts/SegoeUI.woff2" as="font">
+    <link rel="preload" href="fonts/SegoeUI-SemiBold.woff2" as="font">
+    <link rel="preload" href="fonts/SegoeUI-Bold.woff2" as="font">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/product-cart.css">
+  </head>
+  <body class="store-page">
+    <header class="header store-page__header">
+      <div class="wrapper header__wrapper">
+        <nav class="nav header__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">О магазине</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Оплата и доставка</a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn basket-btn header__btn" type="button">
+          <span class="product-counter active" aria-label="Товаров в корзине">6</span> Моя корзина
+        </button>
+      </div>
+    </header>
+
+    <main class="main store-page__main">
+      <section class="catalog main__catalog">
+        <h2 class="visually-hidden">headline</h2>
+
+        <div class="wrapper catalog__wrapper">
+          <article class="product-cart">
+            <a class="product-card__link" href="#">
+              <img class="product-card__img" src="images/product-img_1@2x.jpg" alt="">
+            </a>
+
+            <header class="product-cart__header">
+              <a class="category-link" href="#">мужская одежда</a>
+
+              <h4 class="product-name">
+                <a class="product-name__link" href="#">Свитер мужской</a>
+              </h4>
+            </header>
+
+            <footer class="product-cart__footer">
+              <div class="price">
+                <span class="previous-price">15 300</span>
+
+                <span class="actual-price">12 900</span>
+              </div>
+
+              <a class="shopping-cart__btn shopping-cart__btn_check" role="button" href="#" aria-label="Добавить в корзину"></a>
+            </footer>
+          </article>
+
+          <article class="product-cart bages_active-1">
+            <a class="product-card__link" href="#">
+              <img class="product-card__img" src="images/product-img_2@2x.jpg" alt="">
+            </a>
+
+            <header class="product-cart__header">
+              <a class="category-link" href="#">мужская одежда</a>
+
+              <h4 class="product-name">
+                <a class="product-name__link" href="#">Олимпийка мужская</a>
+              </h4>
+            </header>
+
+            <footer class="product-cart__footer">
+              <div class="price">
+                <span class="previous-price">10 200</span>
+
+                <span class="actual-price">9 000</span>
+              </div>
+
+              <a class="shopping-cart__btn shopping-cart__btn_check" role="button" href="#" aria-label="Добавить в корзину"></a>
+            </footer>
+          </article>
+
+          <article class="product-cart">
+            <a class="product-card__link" href="#">
+              <img class="product-card__img" src="images/product-img_3@2x.jpg" alt="">
+            </a>
+
+            <header class="product-cart__header">
+              <a class="category-link" href="#">мужская одежда</a>
+
+              <h4 class="product-name">
+                <a class="product-name__link" href="#">Пиджак мужской серый</a>
+              </h4>
+            </header>
+
+            <footer class="product-cart__footer">
+              <div class="price">
+                <span class="previous-price hidden">3 900</span>
+
+                <span class="actual-price">11 000</span>
+              </div>
+
+              <a class="shopping-cart__btn shopping-cart__btn_check" role="button" href="#" aria-label="Добавить в корзину"></a>
+            </footer>
+          </article>
+
+          <article class="product-cart bages_active-2">
+            <a class="product-card__link" href="#">
+              <img class="product-card__img" src="images/product-img_4@2x.jpg" alt="">
+            </a>
+
+            <header class="product-cart__header">
+              <a class="category-link" href="#">мужская одежда</a>
+
+              <h4 class="product-name">
+                <a class="product-name__link" href="#">Рубашка мужская голубая</a>
+              </h4>
+            </header>
+
+            <footer class="product-cart__footer">
+              <div class="price">
+                <span class="previous-price">3 900</span>
+
+                <span class="actual-price">2 500</span>
+              </div>
+
+              <a class="shopping-cart__btn shopping-cart__btn_check active" role="button" href="#" aria-label="Добавить в корзину"></a>
+            </footer>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script> </script>
+  </body>
+</html>

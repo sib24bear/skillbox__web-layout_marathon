@@ -1,0 +1,32 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.descr {
+	background-color: #f5f5f5;
+	font-family: sans-serif;
+	padding: 30px;
+}
+
+
+
+.content {
+	padding: 30px;
+}
+
+img {
+	width: 30%;
+}
+
+div > .new-block {
+	background-color: red;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+
+div > .new-block:after {
+	content: 'Ура, вы справились!';
+}

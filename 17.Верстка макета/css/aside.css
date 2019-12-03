@@ -1,0 +1,111 @@
+.aside-contacts {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 10%;
+  max-width: 94px;
+  height: 100%;
+
+  padding-top: 29px;
+  padding-bottom: 65px;
+
+  background-color: #fff;
+  box-shadow: 0 0 19px 1px rgba(17, 26, 61, 0.5);
+
+  z-index: 1100;
+}
+
+.logo-link {
+  width: 48px;
+}
+
+.logo-img {
+  max-width: 100%;
+}
+
+.hidden-menu {
+  position: relative;
+
+  display: none;
+
+  width: 18px;
+  height: 18px;
+}
+
+.hidden-menu__line {
+  position: absolute;
+  top: 50%; margin-top: -3.5px;
+  left: 50%; margin-left: -9px;
+
+  display: block;
+
+  width: 18px;
+  height: 2px;
+
+  transition:all 0.3s linear;
+}
+
+.hidden-menu__line:first-child {
+  transform: translateY(-5px);
+  transition:all 0.3s linear;
+}
+
+.hidden-menu_active .hidden-menu__line:first-child {
+	transform: rotate(90deg);
+}
+
+.social-contact {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.social-contact__item {
+  display: block;
+  margin-top: 40px;
+}
+
+.social-contact__link {
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  transition: filter .5s linear;
+}
+
+.social-contact__link_whatsapp {
+  background-image: url('../images/whatsapp-icon@2x.png');
+}
+
+.social-contact__link_twitter {
+  background-image: url('../images/twitter-icon@2x.png');
+}
+
+.social-contact__link_messenger {
+  background-image: url('../images/messenger-icon@2x.png');
+}
+
+.calendar-link {
+  display: block;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url('../images/calendar-icon@2x.png');
+  background-size: contain;
+  background-position: center;
+}

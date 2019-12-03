@@ -1,0 +1,107 @@
+.field {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.btn {
+  position: relative;
+  padding-left: 47px;
+  padding-right: 0;
+
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 84.37px;
+
+  color: #313131;
+
+  border: none;
+  border-bottom: 4px solid #d3b455;
+  outline: none;
+  border-radius: 8px 8px 15px 15px;
+  box-shadow: 0 10px 35px 5px rgba(97, 97, 97, 0.3);
+
+  background-image: linear-gradient(to top, #ffe779 0%, #fcf8b1 100%);
+
+  cursor: pointer;
+}
+
+.btn:before {
+  content: 'Рассчитайте стоимость доставки в 3 вариантах';
+
+  position: absolute;
+  top:0;
+  width: 473px;
+  height: 100%;
+  display: block;
+  margin-left: -47px;
+
+  border-radius: 8px 0 0 15px;
+
+  background-image: linear-gradient(to top, #ffe779 0%, #fcf8b1 100%);
+  opacity: 1;
+
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.btn:after {
+  content: 'Рассчитайте стоимость доставки в 3 вариантах';
+
+  position: absolute;
+  top:0;
+  width: 473px;
+  height: 100%;
+  display: block;
+  margin-left: -47px;
+
+  border-radius: 8px 0 0 15px;
+
+  background-image: linear-gradient(to top, #eed14c 0%, #f8dc6a 100%);
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.span {
+  position: relative;
+
+  margin-left: 38px;
+  padding: 33px 29px;
+
+  opacity: 1.0;
+
+  border-radius: 0 8px 8px 0;
+
+  background-image: linear-gradient(to top, #d2c172 0%, #efeaa1 100%);
+
+}
+
+.span::after {
+  content: 'Или';
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+  background: red;
+  display:block;
+
+  height: 100%;
+  width:100%;
+}
+
+.btn:hover.btn:after {
+  opacity: 1;
+}
+
+.btn:hover > .span {
+  background-image: linear-gradient(to top, #f7db68 0%, #efd24e 100%);
+}

@@ -1,0 +1,168 @@
+.modal-inner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: none;
+
+  visibility: hidden;
+
+  transition-property: background-color;
+  transition-duration: .6s;
+  transition-timing-function: linear;
+
+  z-index: 9999;
+}
+
+.visible {
+  background-color: #1a1a1acc;
+  visibility: visible;
+  transition-property: background-color;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+
+.hidden {
+  background-color: #1a1a1a00;
+  transition-property: background-color;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+
+
+.modal-container {
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: 420px;
+
+  border-radius: 2px;
+
+  box-shadow: 0 0 19px 1px rgba(17, 26, 61, 0.1);
+
+  transition-property: transform;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+  transform: translateY(-150vh) scale(0);
+}
+
+.modal-open {
+  transform: translateY(0) scale(1);
+  transition-property: transform;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.modal-title {
+  margin: 0;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+
+  color: #ffffff;
+}
+
+.close-btn {
+  margin-left: auto;
+  margin-right: 0;
+  padding: 1.5em;
+
+  background-color: inherit;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.3' height='15.375' viewBox='0 0 7.65 7.688'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23abbcd4; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='close-btn' class='cls-1' d='M1334.03,105.041a1.008,1.008,0,0,1-1.42,0l-5.66-5.657a1,1,0,1,1,1.42-1.415l5.66,5.656A1,1,0,0,1,1334.03,105.041ZM1334,97.992a1,1,0,0,0-1.41,0l-5.66,5.657a1,1,0,1,0,1.42,1.414l5.65-5.657A1,1,0,0,0,1334,97.992Z' transform='translate(-1326.66 -97.688)'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: center;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: all .3s linear;
+}
+
+.close-btn:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.3' height='15.375' viewBox='0 0 7.65 7.688'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23d86843; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='close-btn' class='cls-1' d='M1334.03,105.041a1.008,1.008,0,0,1-1.42,0l-5.66-5.657a1,1,0,1,1,1.42-1.415l5.66,5.656A1,1,0,0,1,1334.03,105.041ZM1334,97.992a1,1,0,0,0-1.41,0l-5.66,5.657a1,1,0,1,0,1.42,1.414l5.65-5.657A1,1,0,0,0,1334,97.992Z' transform='translate(-1326.66 -97.688)'/%3E%3C/svg%3E%0A");
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1em;
+
+  background-color: #fff;
+}
+
+.choose-time {
+  display: block;
+  margin: 0 auto;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+
+  letter-spacing: 0.35px;
+}
+
+.service-choose {
+  display: block;
+  margin: 0 auto;
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.35px;
+
+  color: #dadeea;
+}
+
+.choose-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.choose-list__item {
+  list-style-type: none;
+}
+
+.choose-list_link {
+
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+
+  color: #2f2f2f;
+}
+
+.choose-form {
+  padding: 0 1em;
+}
